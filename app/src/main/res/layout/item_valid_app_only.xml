@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/costum_edittext">
+
+        <!-- Add TextViews or other views to display kid information -->
+
+        <TextView
+            android:id="@+id/txtid_valid_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            tools:ignore="DuplicateIds"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txtusername_valid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtkidID_valid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtkidname_valid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtdateappointment_valid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+
+        <!-- Approve Button -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            >
+
+            <!-- Decline Button -->
+            <Button
+                android:id="@+id/btn_vaccinate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="left"
+                android:textSize="16dp"
+                android:backgroundTint="@color/purple"
+                app:cornerRadius = "20dp"
+                android:text="Vaccinate Now!"
+                android:drawableLeft="@drawable/baseline_done_24"
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

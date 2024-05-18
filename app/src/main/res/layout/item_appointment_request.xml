@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/costum_edittext">
+
+        <!-- Add TextViews or other views to display kid information -->
+
+        <TextView
+            android:id="@+id/txtid_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            tools:ignore="DuplicateIds"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+           android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtkidID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtkidname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtdateappointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"/>
+
+
+        <!-- Approve Button -->
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:paddingBottom="5dp"
+          >
+
+          <!-- Decline Button -->
+          <Button
+              android:id="@+id/btnApprove"
+              android:layout_width="155dp"
+              android:layout_height="60dp"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:layout_gravity="left"
+              android:textSize="16dp"
+              android:backgroundTint="@color/purple"
+              app:cornerRadius = "20dp"
+              android:text="Approve"
+              android:drawableLeft="@drawable/baseline_done_24_approvvev"
+              />
+
+          <Button
+              android:id="@+id/btnDecline"
+              android:layout_width="220dp"
+              android:layout_height="60dp"
+              android:layout_gravity="right"
+              android:layout_marginLeft="50dp"
+android:layout_marginRight="10dp"
+              android:layout_toEndOf="@+id/btnApprove"
+              android:layout_toRightOf="@+id/btnApprove"
+              android:textSize="16dp"
+              android:backgroundTint="@color/purple"
+              app:cornerRadius = "20dp"
+              android:text="Decline"
+              android:drawableLeft="@drawable/baseline_clear_24_decline"/>
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

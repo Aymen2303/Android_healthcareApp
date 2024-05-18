@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyLogin"
+        tools:targetApi="31">
+        <activity
+            android:name=".kid_vaccination"
+            android:exported="false" />
+        <activity
+            android:name=".add_kid"
+            android:exported="false" />
+        <activity
+            android:name=".nurse_Valid_Appointments"
+            android:exported="false" />
+        <activity
+            android:name=".nurse_informations"
+            android:label="Nurse Informations" />
+        <activity
+            android:name=".Vaccines_infos"
+            android:exported="false" />
+        <activity
+            android:name=".client_personal_info"
+            android:exported="false" />
+        <activity
+            android:name=".client_Kids_info"
+            android:exported="false" />
+        <activity
+            android:name=".About_me_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".nurse"
+            android:exported="false" />
+        <activity
+            android:name=".client"
+            android:exported="false" />
+        <activity
+            android:name=".Profession_chosing"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

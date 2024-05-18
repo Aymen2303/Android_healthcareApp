@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/fragment_container"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="610dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/costum_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Displaying Inofrmations:"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:id="@+id/kidName_text_vaccine"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidId_text_vaccine"
+                android:text="id"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/kidAge_txt_vaccine"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:hint="Age ( in Months )"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/costum_edittext"
+                android:inputType="number"
+                />
+            <EditText
+                android:id="@+id/kidHeight_txt_vaccine"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:hint="Height"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/costum_edittext"
+                android:inputType="number"
+                />
+            <EditText
+                android:id="@+id/kidWeight_txt_vaccine"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:hint="Weight"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/costum_edittext"
+                android:inputType="number"
+                />
+            <EditText
+                android:id="@+id/kidDate_txt_vaccine"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:hint="Date"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/costum_edittext"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Choose a Vaccine"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:contentDescription="Spinner for selecting a nurse"/>
+ !-->
+
+            <EditText
+                android:id="@+id/kidVaccine_txt_Name"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costum_edittext"
+                android:gravity="center"
+                android:hint="Enter a Vaccine"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/btn_update_kid"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:text="Vaccinate!"
+                android:layout_marginLeft="50dp"
+                android:backgroundTint="@color/purple"
+                app:cornerRadius = "20dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
